@@ -25,7 +25,7 @@ var Config = &generic.Configuration{
 		query = strings.TrimSpace(query)
 		query = strings.ToLower(query)
 		query = url.QueryEscape(query)
-		template := "https://chapmanganato.com/" + baseUrl + "/search/story/%s"
+		template := "https://manganato.com/search/story/%s"
 		return fmt.Sprintf(template, query)
 	},
 	MangaExtractor: &generic.MangaExtractor{
