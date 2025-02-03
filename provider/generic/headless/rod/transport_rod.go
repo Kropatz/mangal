@@ -40,11 +40,12 @@ func setExtraHeaders(p *rod.Page, headers http.Header) (func(), error) {
 }
 
 func (t TransportRod) RoundTrip(request *http.Request) (*http.Response, error) {
-
 	t.browserBuilder.Do(func() {
 		u := launcher.New().Leakless(runtime.GOOS == "linux").Set(flags.Headless, "new").MustLaunch()
 		t.browser = rod.New().ControlURL(u).MustConnect()
 	})
+	defer t.browser.MustClose();
+
 	page, err := t.browser.Context(request.Context()).Page(proto.TargetCreateTarget{URL: ""})
 
 	if err != nil {
