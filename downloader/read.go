@@ -94,6 +94,8 @@ func openRead(path string, chapter *source.Chapter, progress func(string)) error
 	)
 
 	switch viper.GetString(key.FormatsUse) {
+	case constant.FormatPDF:
+		reader = viper.GetString(key.ReaderPDF)
 	case constant.FormatCBZ:
 		reader = viper.GetString(key.ReaderCBZ)
 	case constant.FormatZIP:

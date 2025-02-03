@@ -24,6 +24,7 @@ require (
 	github.com/nickalie/go-binwrapper v0.0.0-20190114141239-525121d43c84
 	github.com/nickalie/go-webpbin v0.0.0-20220110095747-f10016bf2dc1
 	github.com/oliamb/cutter v0.2.2
+	github.com/pdfcpu/pdfcpu v0.3.13
 	github.com/samber/lo v1.39.0
 	github.com/samber/mo v1.11.0
 	github.com/sirupsen/logrus v1.9.3
@@ -62,6 +63,8 @@ require (
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/gopherjs/gopherjs v1.17.2 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
+	github.com/hhrutter/lzw v0.0.0-20190829144645-6f07a24e8650 // indirect
+	github.com/hhrutter/tiff v0.0.0-20190829141212-736cae8d0bc7 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/jtolds/gls v4.20.0+incompatible // indirect
 	github.com/kballard/go-shellquote v0.0.0-20180428030007-95032a82bc51 // indirect
@@ -83,6 +86,7 @@ require (
 	github.com/nwaples/rardecode v1.1.3 // indirect
 	github.com/pelletier/go-toml/v2 v2.2.0 // indirect
 	github.com/pierrec/lz4 v2.6.1+incompatible // indirect
+	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
 	github.com/rivo/uniseg v0.4.7 // indirect
 	github.com/sagikazarmark/locafero v0.4.0 // indirect
@@ -103,6 +107,7 @@ require (
 	github.com/ysmood/got v0.40.0 // indirect
 	github.com/ysmood/leakless v0.9.0 // indirect
 	github.com/yuin/gluamapper v0.0.0-20150323120927-d836955830e7 // indirect
+	go.uber.org/atomic v1.9.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	golang.org/x/net v0.24.0 // indirect
 	golang.org/x/sync v0.7.0 // indirect
